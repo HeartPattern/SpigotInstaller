@@ -1,4 +1,4 @@
-#Spigot Installer
+# Spigot Installer
 SpigotInstaller install every stable version of spigot to remote or local maven repository.
 
 ## How to build
