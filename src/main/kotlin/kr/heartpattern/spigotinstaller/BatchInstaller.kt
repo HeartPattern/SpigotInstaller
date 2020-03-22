@@ -24,8 +24,6 @@ fun batchInstaller(remote: String?) {
             println("$version is not cached")
 
             val workingDir = File("build")
-            if (workingDir.exists())
-                workingDir.deleteRecursively()
             workingDir.mkdirs()
 
             println("Run buildtool")
@@ -37,7 +35,6 @@ fun batchInstaller(remote: String?) {
             else
                 installLocal(workingDir)
 
-            workingDir.deleteRecursively()
             cache.appendText(info.name + "\n")
         }
     }

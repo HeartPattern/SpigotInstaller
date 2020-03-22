@@ -11,6 +11,7 @@ fun installLocal(directory: File){
         .directory(File(directory, "Spigot"))
         .command(
             "mvn",
+            "clean",
             "install"
         )
         .redirectOutput(ProcessBuilder.Redirect.INHERIT)
@@ -30,6 +31,7 @@ fun installRemote(directory: File, remote: String) {
         .directory(spigot)
         .command(
             "mvn",
+            "clean",
             "deploy"
         )
         .redirectOutput(ProcessBuilder.Redirect.INHERIT)
