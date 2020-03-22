@@ -7,7 +7,7 @@ import java.io.File
 
 fun batchInstaller(remote: String?) {
     runBlocking {
-        val cache = File("cache-${remote?.split('|')?.firstOrNull() ?: "local"}")
+        val cache = File("cache-${remote?.split(',')?.firstOrNull() ?: "local"}")
         @Suppress("BlockingMethodInNonBlockingContext")
         cache.createNewFile()
         val cacheList = cache.readLines()

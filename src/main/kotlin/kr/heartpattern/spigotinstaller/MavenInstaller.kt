@@ -42,7 +42,7 @@ fun installRemote(directory: File, remote: String) {
 }
 
 fun remapPom(pom: File, remote: String){
-    val (name, adress)  = remote.split(":")
+    val (name, adress)  = remote.split(",")
     val model = MavenXpp3Reader().read(pom.inputStream())
     model.distributionManagement = DistributionManagement().apply{
         this.snapshotRepository = DeploymentRepository().apply {

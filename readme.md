@@ -15,7 +15,7 @@ and unzip it.
 Just execute `SpigotInstaller` or `SpigotInstaller.bat` in bin directory.
 ### Install to remote repository
 Execute `SpigotInstaller` or `SpigotInstaller.bat` with --remote argument. You need to pass id and url of 
-remote repository splited with `|`. Optionally, if your remote repository need credentials, you need to
+remote repository splited with `,`. Optionally, if your remote repository need credentials, you need to
 configure credential in `settings.xml` file under `~/.m2` directory.
 
 ### Example usage
@@ -23,5 +23,5 @@ configure credential in `settings.xml` file under `~/.m2` directory.
 ./SpigotInstaller
 ```
 ```
-./SpigotInstaller.bat --remote MyRepository|https://maven.example.com/
+./SpigotInstaller.bat --remote MyRepository,https://maven.example.com/
 ```
