@@ -7,7 +7,7 @@ Build result will be generated under `build/install`
 
 ## Download compiled application
 If you just want to download compiled application, download tar or zip from 
-[jenkins](https://jenkins.heartpattern.kr/job/HeartPattern/job/SpigotInstaller/job/master/)
+[jenkins](https://jenkins.heartpattern.io/job/HeartPattern/job/SpigotInstaller/job/master/)
 and unzip it.
 
 ## How to run
